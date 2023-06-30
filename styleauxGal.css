@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: #EC7063 ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.nombre{
+    color: #eaebef;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 85px;
+    margin-right: 30px;
+}
+
+
+
+body{
+    background: #F0B27A ;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.slider-box{
+    width: 800px;
+    height: auto;
+    margin: 40px auto 0;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 10s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 98%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img{
+    width: 100%;
+    position: under;
+}
+
+.derecha{
+    width: 70%;
+    height: 10px;
+}
+
+.texto{
+    color: #eaebef;
+    text-align: center; 
+}
+
+@keyframes slide {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -67%;}
+    45%{margin-left: -67%;}
+
+    50%{margin-left: -134%;}
+    70%{margin-left: -134%;}
+
+    75%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+
+.nav{
+    width: 250px;
+    display: flex;
+}
+
+.nav_link{
+    color: #eaebef;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.nav_link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav_link--inside:hover{
+    background: #F5B7B1;
+}
+
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 0 0 0;
+    background: #EC7063;
+}
+
+.list_item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list_item--click{
+    cursor: pointer;
+}
+
+.list_button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list_arrow{
+    transform: rotate(90deg);
+}
+
+.list_arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list_show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #eaebef;
+    list-style: none;
+    transition: heigth .4s;
+    height: 0;
+}
